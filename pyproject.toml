@@ -1,0 +1,11 @@
+[project]
+name = "mythos-image-model"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "mflux @ https://github.com/mflux-community/mflux/archive/b422795326552fa4399208a9a7403480fd28c67b.tar.gz",
+]
+
+[tool.uv]
+package = false
+environments = ["sys_platform == 'darwin' and platform_machine == 'arm64'"]
